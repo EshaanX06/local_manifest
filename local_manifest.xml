@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<remote name="me" 
+        fetch="https://github.com/lazrdev" />
+ <remote name="mi"
+           fetch="https://github.com/mi-sdm439" />
+ <remote name="hsx02"
+           fetch="https://github.com/hsx02"/>
+<remote name="pxl"
+           fetch="https://github.com/PixelExperience" />   
+  <remote name="Chuck"
+         fetch="https://github.com/ChuckProjekt" />
+
+   <remote name="mi2"
+                   fetch="https://github.com/mi-msm8937" />
+        <remote name="LOS"
+           fetch="https://github.com/LineageOS" />
+        <remote  name="sn"
+           fetch="https://github.com/SonalSingh18" />   
+        
+        <!-- Kernels -->
+   <project path="kernel/xiaomi/sdm439" 
+            name="android_kernel_xiaomi_sdm439"
+            remote="mi" 
+            revision="a12/main"  
+            clone-depth="1"/>
+
+<!-- Device Tree and Common Device Tree -->
+   <project path="device/xiaomi/olives" 
+            name="android_device_xiaomi_olives" 
+            remote="me" 
+            revision="potato-12-lazrdev"/>
+   
+   <project path="device/xiaomi/sdm439-common" 
+            name="device_xiaomi_sdm439-common" 
+            remote="me" 
+            revision="12.0"/>
+  
+<!-- Vendor Trees and Common Vendor Tree -->
+   <project path="vendor/xiaomi/olives" 
+            name="proprietary_vendor_xiaomi_olives" 
+            remote="me"
+            revision="lineage-18.1"/>   
+   <project path="vendor/xiaomi/sdm439-common"  
+            name="vendor_xiaomi_sdm439-common" 
+            remote="me" 
+            revision="12.0"/>
+</manifest>
